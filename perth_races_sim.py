@@ -14,7 +14,10 @@ bank = 100
 while bank > 0:
     print('Your Remaing bank is: ', bank)
     print('')
-    horse_selection = int(input('Please Select your horse: '))
+    horse_selection = int(input('Please Select your horse, if you are ready to quit type "exit": '))
+    if horse_selection == "exit":
+        exit()
+        
     
     print('')
     bet_value = int(input('Please Place your Bet Value: '))
